@@ -608,6 +608,7 @@ ul {
 .modal-form-field:focus + .modal-form-icon {
   fill: var(--button-bg-cl);
 }
+
 .modal-form-field {
   display: block;
   width: 100%;
@@ -644,7 +645,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 24px;
+  text-align: center;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 .modal-form-checkbox {
   appearance: none;
@@ -661,6 +664,7 @@ ul {
   opacity: 0;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 
   /* transform: rotate(0) scale(0.3);
   transition: 400ms 200ms;
@@ -685,7 +689,6 @@ ul {
 
 .modal-form-desc {
   font-size: 12px;
-  padding-left: 8px;
 }
 .modal-form-link {
   color: var(--button-bg-cl);
