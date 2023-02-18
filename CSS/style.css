@@ -385,8 +385,13 @@ ul {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
-  gap: 120px;
   align-items: baseline;
+}
+.social-media {
+  margin-right: 80px;
+}
+.footer-div {
+  margin-right: 120px;
 }
 .footer-logo {
   font-family: 'Raleway', sans-serif;
@@ -714,19 +719,28 @@ ul {
 .subscribe-input {
   width: 264px;
   height: 40px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  /* background-image: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)); */
-
-  background-color: var(--primary-bg-cl);
-}
-.subscribe-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
+  cursor: pointer;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: var(--primary-bg-cl);
+}
+.subscribe-input:focus {
+  outline: none;
+  color: white;
+}
+.subscribe-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: calc(24 / 12);
+
+  letter-spacing: 0.04em;
 }
 .subscribe-btn {
   width: 165px;
@@ -734,9 +748,18 @@ ul {
   align-items: center;
   display: flex;
   text-align: center;
+  padding: 8px 24px;
+}
+
+.subs-div {
+  position: relative;
 }
 .subscribe-icon {
   fill: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 117px;
+  transform: translateY(-50%);
 }
 .subs-line {
   display: flex;
