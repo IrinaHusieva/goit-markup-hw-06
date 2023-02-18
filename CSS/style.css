@@ -760,7 +760,9 @@ ul {
   top: 50%;
   left: 117px;
   transform: translateY(-50%);
+  cursor: pointer;
 }
+
 .subs-line {
   display: flex;
   padding-top: 16px;
