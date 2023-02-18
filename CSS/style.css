@@ -594,6 +594,8 @@ ul {
   text-align: center;
   margin-top: 72px;
   margin-bottom: 14px;
+  font-weight: 500;
+  font-size: 16px;
 }
 .modal-form-group {
   position: relative;
@@ -620,10 +622,12 @@ ul {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-/* .modal-form-field:focus,
-.modal-form-field:focus-visible {
-  border: 1px solid #4d5ae5;
-} */
+.modal-form-field:focus {
+  outline: 1px solid #4d5ae5;
+}
+.modal-form-comment:focus {
+  outline: 1px solid #4d5ae5;
+}
 .modal-form-label {
   display: block;
   font-size: 12px;
@@ -634,7 +638,7 @@ ul {
   display: block;
   width: 100%;
   height: 120px;
-  margin-bottom: 16px;
+  padding: 8px 16px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -645,9 +649,9 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   gap: 8px;
-  margin-bottom: 24px;
+  padding-bottom: 24px;
+  padding-top: 16px;
 }
 .modal-form-checkbox {
   appearance: none;
@@ -665,30 +669,16 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
-
-  /* transform: rotate(0) scale(0.3);
-  transition: 400ms 200ms;
-  transform-origin: center; */
 }
+
 .modal-form-checkbox:checked + .custom-checkbox > .custom-checkbox-check {
   opacity: 1;
-
-  /* transform: rotate(360deg) scale(0.7); */
 }
-/* .modal-form-checkbox:checked + .checkbox-svg {
-  background-color: #404bbf;
-  background-image: url(../images/icons/checkbox.svg);
-}
-.checkbox-svg {
-  display: inline-block;
-  border: 1.25px solid #2e2f42;
-  border-radius: 2px;
-  width: 16px;
-  height: 16px;
-} */
 
 .modal-form-desc {
   font-size: 12px;
+  display: block;
+  padding-top: 2px;
 }
 .modal-form-link {
   color: var(--button-bg-cl);
@@ -709,16 +699,8 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .modal-form-btn:disabled {
-  filter: grayscale(1);
-  background-color: transparent;
-  color: inherit;
-  cursor: not-allowed;
-} */
 
 .modal-form-comment::placeholder {
-  padding-left: 16px;
-  padding-top: 8px;
   color: rgba(117, 117, 117, 0.5);
 }
 /* Subscribe-form */
