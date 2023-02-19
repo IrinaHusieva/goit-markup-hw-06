@@ -472,9 +472,10 @@
             </li>
           </ul>
         </div>
-        <div class="subscribe-form">
-          <p>Subscribe</p>
-          <div class="subs-line">
+        <!-- Subscribe -->
+        <div class="subscribe">
+          <strong class="subscribe-title">Subscribe</strong>
+          <form class="subscribe-form" name="subscribe_form">
             <label class="subscribe-field">
               <input
                 class="subscribe-input"
@@ -483,26 +484,25 @@
                 placeholder="E-mail"
               />
             </label>
-            <div class="subs-div">
-            <button class="button subscribe-btn" type="submit">Subscribe</button>
-            <svg class="subscribe-icon" width="24" height="20">
+            <button class="button subscribe-btn" type="submit">Subscribe
+              <svg class="subscribe-icon" width="24" height="20">
                 <use href="./images/icons/icons.svg#icon-subscribe"></use>
-              </svg>
-              </div>
-          </div>
+              </button>
+          </form>
         </div>
-      </div>
       </div>
     </footer>
     <!-- Modal window -->
-     <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
             <use href="./images/icons/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <strong class="modal-title">Leave your contacts and we will call you back</strong>
+        <strong class="modal-title"
+          >Leave your contacts and we will call you back</strong
+        >
         <form class="modal-form" name="modal_form">
           <!-- Name field -->
           <label class="modal-form-label" for="user_sign">Name</label>
@@ -535,7 +535,8 @@
             name="user_comment"
             id="user_comment"
             rows="6"
-            placeholder="Text input"></textarea>
+            placeholder="Text input"
+          ></textarea>
           <!-- Agreement field -->
           <label class="modal-form-agreement" for="user_agreement">
             <input
@@ -545,12 +546,20 @@
               id="user_agreement"
             />
             <svg class="custom-checkbox" width="16" height="16">
-              <use class="custom-checkbox-frame" href="./images/icons/icons.svg#icon-checkbox"></use>
-              <use class="custom-checkbox-check" href="./images/icons/icons.svg#property"></use>
+              <use
+                class="custom-checkbox-frame"
+                href="./images/icons/icons.svg#icon-checkbox"
+              ></use>
+              <use
+                class="custom-checkbox-check"
+                href="./images/icons/icons.svg#property"
+              ></use>
             </svg>
             <span class="modal-form-desc">
               I accept the terms and conditions of the
-              <a class="modal-form-link" href="" target="_blank">Privacy Policy</a>
+              <a class="modal-form-link" href="" target="_blank"
+                >Privacy Policy</a
+              >
             </span>
           </label>
           <button class="modal-form-btn button" type="submit">Send</button>
