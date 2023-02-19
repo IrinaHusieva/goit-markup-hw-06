@@ -764,11 +764,11 @@ ul {
   display: flex;
   text-align: center;
   padding: 8px 24px;
+  gap: 16px;
 }
 
 .subscribe-icon {
   fill: #ffffff;
-  margin-left: 16px;
 }
 
 .subscribe-title {
